@@ -49,20 +49,30 @@
 			li {
 				color: #17bed2;
 			}
+			li p {
+				margin-bottom: 0;
+			}
 			.leftimg {
 				float:left; 
 				margin: 0px 20px 0 0; 
 		    }
-			li p {
-				margin-bottom: 0;
-			}
 			p {
 				color: grey;
 			}
-			.swiper-clients {
+			.swiper-clients,
+			.swiper-clients-ipst {
 				margin-top: 15px;
 				margin-bottom: 15px;
 			}
+
+			/* .promo-block {
+				background: none;
+			} */
+
+			.service{
+				background: #fafafa;
+			}
+			
 			
 		</style>
     </head>
@@ -97,13 +107,13 @@
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
+								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#skills">Навыки</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">Обо мне</a></li>
 								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#expectation">Резюме</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Опыт</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Проекты</a></li>
 								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#education">Образование</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#skills">Навыки</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">Опыт работы</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Портфолио</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#teaching">Преподавание</a></li>
+								<!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#teaching">Преподавание</a></li> -->
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Контакты</a></li>
 								<!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="en/index.html">en</a></li> -->
                             </ul>
@@ -120,19 +130,21 @@
         <div class="promo-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 sm-margin-b-60">
+                    <div class="col-sm-7 sm-margin-b-60">
                         <div class="margin-b-30">
                             <h1 class="promo-block-title">Лилия <br/> Устимова</h1>
-                            <p class="promo-block-text">Senior Software Developer<br/>C#, ASP .NET MVC, JavaScript, Angular 2</p>
+							<p class="promo-block-text">Senior Software Developer<br/>C#, ASP .NET MVC, JavaScript, Angular 2+</p>
+							<p>18 лет разрабатываю информационные системы уровня enterprise, из них 7 лет в разработке web приложений.
+								<br>Высшее образование, степень "Специалист" в компьютерных науках.</p>
                         </div>
                         <ul class="list-inline">
-                            <li><a href="https://www.linkedin.com/in/ustimova-lilia/?locale=ru_RU" class="social-icons" target="blank" title="LinkedIn"><i class="icon-social-linkedin"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/lilia-ustimova" class="social-icons" target="blank" title="LinkedIn"><i class="icon-social-linkedin"></i></a></li>
                             <li><a href="https://github.com/LiliaUst" class="social-icons" target="blank" title="GitHub"><i class="icon-social-github"></i></a></li>
                             <li><a href="https://www.facebook.com/lilia.ustimova" class="social-icons" target="blank" title="Facebook"><i class="icon-social-facebook"></i></a></li></i></a></li>
                             <li><a href="http://programming-lilit.blogspot.com/" class="social-icons" target="blank" title="Блог"><i class="icon-globe"></i></a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-5">
                         <div class="promo-block-img-wrap">
                             <img class="promo-block-img img-responsive" src="img/mockup/avatar-03.jpg" align="Avatar">
                         </div>
@@ -143,125 +155,9 @@
         </div>
         <!--========== SLIDER ==========-->
 
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- About -->
-        <div id="about">
-            <div class="container content-lg">
-                <div class="row">
-                    <!--<div class="col-sm-5 sm-margin-b-60">
-                        <img class="full-width img-responsive" src="img/500x700/02.jpg" alt="Image">
-                    </div>-->
-                    <div class="col-sm-12">
-                        <div class="margin-b-50">
-                            <div>
-                                <div>
-									<img class="img-responsive leftimg" src="img/500x700/02.jpg" alt="Image">
-                                    <h2>Обо мне</h2>
-                                    <p>Меня зовут Лилия Устимова. Профессиональный программист. 18 лет разрабатываю информационные системы уровня enterprise. Высшее образование, степень "Специалист" в компьютерных науках.</p>
-									
-									<h3>Ключевая информация</h3>
-									
-									<p>Создавала приложения под Windows, последние 7 лет разрабатываю приложения под веб, в том числе в модели SaaS (Amazon Web Services, MS Azure).</p>
-									<p>Последние два года использую технологии .NET (C#, ASP.NET MVC and Core, EntityFramework, WebApi, LINQ) и JS фреймворки (Angular 2+, TypeScript, jQuery, JavaScript). Работаю с DevExtreme, KendoUI, умею верстать. Разрабатываю как фронтенд, так и бекенд.</p>
-									<p>Также проектирую и разрабатываю базы данных. СУБД, с которыми имела дело: MS Sql Server, MySql, PostgreSql, Progress.</p>
-									<p>Работаю в командах, практикующих Agile методологии, использую инструменты TFS, Jira, Redmine.</p>
-									<p>Для контроля версий использую Git, Hg, Svn.</p>
-									<p>Прошла путь от инженера-программиста до ведущего программиста, управляла командой разработчиков до 5 человек и проектировала архитектуры программных систем. </p>
-									<p>3 года преподавала программирование как в государственных, так и в коммерческих учебных заведениях.</p>
-									<p>Работала фрилансером в течении нескольких лет, поэтому умею работать как в распределенной команде, так и удаленно. Кроме того, отлично работаю и самостоятельно, и в составе команды (в офисе).</p>
-									
-									<h3>Проекты</h3>
-									
-									<p>Разработала ПО для следующих сфер:</p>
-									<ul>
-										<li><p>автоматизированные системы управления технологическими процессами</p></li>
-										<li><p>биллинговые системы в телекоме</p></li>
-										<li><p>медицинские информационные системы</p></li>
-										<li><p>CRM системы</p></li>
-										<li><p>ERP системы и системы бухгалтерского учета</p></li>
-										<li><p>решения в области логистики автомобильных перевозок</p></li>
-										<li><p>и другие</p></li>
-									</ul>
-									<p>В разделе <a href="#portfolio">Портфолио</a> описаны некоторые из систем.</p>
-									
-									<h3>Личные качества</h3>
-									
-									<p>Люблю программирование, потому что это творческий и созидательный процесс. Не представляю себя в другой роли. Работа программиста требует постоянно учить новые технологии, языки, вникать в новые предметные области и это импонирует.</p>
-									<p>Мне не безразлично, что будет с разрабатываемым продуктом, поэтому постоянно проявляю инициативу и вношу предложения по улучшению продукта. Решаю проблемы и удовлетворяю потребности клиента, заказчика, пользователя.</p>
-									<p>Люблю, когда программные продукты выглядят аккуратно и профессионально. Важно, чтобы программа была дружественной пользователю. Поэтому уделяю этим аспектам внимание при работе.</p>
-									<p>Люблю новые и сложные задачи, нравится всё автоматизировать.</p>
-									<p>Моя внутренняя мотивированность играет важную роль, большую чем внешние факторы, позволяя реализовывать мою ответственность.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End About -->
-
-		<!-- Expectation -->
-		<div id="expectation">
-			<div class="bg-color-sky-light" data-auto-height="true">
-				<div class="container content-lg">
-					<div class="row">
-						<div class="col-sm-6 sm-margin-b-60">
-							<h2>Мои ожидания от работы</h2>
-						</div>
-					</div>
-					
-					<div class="row">
-                    <div class="col-sm-12">
-                        <div class="margin-b-50">
-                            <div class="margin-b-50">
-                                <div class="margin-b-30">
-									<ul>
-										<li><p>Приму участие в полном цикле разработки продукта, преимущественно разработка новой функциональности</p></li>
-										<li><p>Считаю, что в работе очень важен грамотный менеджмент</p></li>
-										<li><p>Могу работать удаленно или частично удаленно, потому что умею работать не в офисе (имею опыт работы на себя), владею техниками тайм менеджмента и нравится работать удаленно часть времени - это позволяет лучше сфокусироваться на задачах и продуктивнее работать</p></li>
-										<li><p>Интересуюсь проектами в финансовой сфере, созданием чат-ботов и machine learning</p></li>
-										<li><p>Хочу работать там, где необходим английский язык на ежедневной основе для постоянного улучшения навыков английского</p></li>
-									</ul>
-                                </div>
-                                <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1FPtXeZAWhhwNoNQMSbCOiIii6dce8HUw" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Скачать резюме .pdf</a> &nbsp;&nbsp;&nbsp;
-								<a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1Iyi_fNsZv_a6BMPIeCvPVQu7Cz9eAOKh" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Скачать резюме .docx</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-				</div>
-			</div>
-		</div>
-		<!-- End Expectation -->
-
-		<!-- Education -->
-		<div id="education">
-			<div class="container content-lg">
-				<div class="row">
-					<div class="col-sm-12 sm-margin-b-60">
-						<h2>Образование</h2>
-						<div class="row">
-							<div class="col-sm-9">
-								<h3>Специалист — Восточноукраинский Национальный Университет им. Даля</h3>
-								<p>Кафедра: Компьютерной инженерии</p>
-								<p>Специальность: Компьютерные системы и сети	</p>
-							</div>
-							
-							<div class="col-sm-3 text-right">
-								<p>1993 – 1999</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Education -->
-		
 		<!-- Skills -->
 		<div id="skills">
-			<div class="bg-color-sky-light" data-auto-height="true">
+			<div class="" data-auto-height="true">
 				<div class="container content-lg">
 					<div class="row">
 						<div class="col-sm-6 sm-margin-b-60">
@@ -270,67 +166,67 @@
 						</div>
 					</div>
 					<!--// row -->
-                    <div class="row row-space-2 margin-b-4">
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Архитектура</h3>
-                                    <p class="margin-b-5">Владение ООП и паттернами проектирования</p>
+					<div class="row row-space-2 margin-b-4">
+						<div class="col-md-3 col-sm-6 md-margin-b-4">
+							<div class="service" data-height="height">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Архитектура</h3>
+									<p class="margin-b-5">Владение ООП и паттернами проектирования</p>
 									<p class="margin-b-5">Знание концепций БД</p>
 									<p class="margin-b-5">Проектирование архитектуры приложения и структуры базы данных</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Языки программирования</h3>
-                                    <p class="margin-b-5">C#, LINQ</p>
-                                    <p class="margin-b-5">JavaScript, TypeScript</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Фреймворки</h3>
-                                    <p class="margin-b-5">ASP.NET MVC, ASP.NET Core</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 md-margin-b-4">
+							<div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Языки программирования</h3>
+									<p class="margin-b-5">C#, LINQ</p>
+									<p class="margin-b-5">JavaScript, TypeScript</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 sm-margin-b-4">
+							<div class="service" data-height="height">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Фреймворки</h3>
+									<p class="margin-b-5">ASP.NET MVC, ASP.NET Core</p>
 									<p class="margin-b-5">Angular 2+, jQuery</p>
 									<p class="margin-b-5">ASP.NET Web API</p>
 									<p class="margin-b-5">Entity Framework</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Базы данных</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 md-margin-b-4">
+							<div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Базы данных</h3>
 									<p class="margin-b-5">SQL</p>
-                                    <p class="margin-b-5">MS SQL Server</p>
+									<p class="margin-b-5">MS SQL Server</p>
 									<p class="margin-b-5">PostgreSql</p>
 									<p class="margin-b-5">MySql</p>
 									<p class="margin-b-5">Progress</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// end row -->
 					
 					<!--// row -->
 					
-                    <div class="row row-space-2 margin-b-4">
+					<div class="row row-space-2 margin-b-4">
 						<div class="col-md-3 col-sm-6 md-margin-b-4">
 							<div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
 								<div class="service-element">
@@ -344,50 +240,139 @@
 								</div>
 							</div>
 						</div>
-                        <div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Системы контроля версий</h3>
-                                    <p class="margin-b-5">Git</p>
+						<div class="col-md-3 col-sm-6 md-margin-b-4">
+							<div class="service" data-height="height">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Системы контроля версий</h3>
+									<p class="margin-b-5">Git</p>
 									<p class="margin-b-5">Hg</p>
 									<p class="margin-b-5">Svn</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Инструменты</h3>
-                                    <p class="margin-b-5">TFS</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 sm-margin-b-4">
+							<div class="service" data-height="height">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Инструменты</h3>
+									<p class="margin-b-5">TFS</p>
 									<p class="margin-b-5">Jira</p>
 									<p class="margin-b-5">Redmine</p>
-                                </div>
-                            </div>
-                        </div>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-3 col-sm-6 md-margin-b-4">
-                            <div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Методологии</h3>
-                                    <p class="margin-b-5">Agile (Scrum, KANBAN)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
+							<div class="service" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
+								<div class="service-element">
+									<i class="service-icon icon-badge"></i>
+								</div>
+								<div class="service-info">
+									<h3>Методологии</h3>
+									<p class="margin-b-5">Agile (Scrum, KANBAN)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--// end row -->
 				</div>
 			</div>
 		</div>
 		<!-- End Skills -->
+				
 		
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- About -->
+        <div id="about">
+			<div class="bg-color-sky-light" data-auto-height="true">
+				<div class="container content-lg">
+					<div class="row">
+						<!--<div class="col-sm-5 sm-margin-b-60">
+							<img class="full-width img-responsive" src="img/500x700/02.jpg" alt="Image">
+						</div>-->
+						<div class="col-sm-12">
+							<!-- <img class="img-responsive leftimg" src="img/500x700/02.jpg" alt="Image"> -->
+							<h2>Обо мне</h2>
+							<p>Создавала приложения под Windows, последние 7 лет разрабатываю приложения под веб, в том числе в модели SaaS (Amazon Web Services, MS Azure).</p>
+							<p>Последние два года использую технологии .NET (C#, ASP.NET MVC and Core, EntityFramework, Web Services, WebApi, LINQ) и JS фреймворки (Angular 2+, TypeScript, jQuery, JavaScript). Работаю с DevExtreme, KendoUI, умею верстать. Разрабатываю как фронтенд, так и бекенд.</p>
+							<p>Также проектирую и разрабатываю базы данных. СУБД, с которыми имела дело: MS Sql Server, MySql, PostgreSql, Progress.</p>
+							<p>Работаю в командах, практикующих Agile методологии, использую инструменты TFS, Jira, Redmine.</p>
+							<p>Для контроля версий использую Git, Hg, Svn.</p>
+							<p>Прошла путь от инженера-программиста до ведущего программиста, управляла командой разработчиков до 5 человек и проектировала архитектуры программных систем. </p>
+							<p>3 года преподавала программирование как в государственных, так и в коммерческих учебных заведениях.</p>
+							<p>Работала фрилансером в течении нескольких лет, поэтому умею работать как в распределенной команде, так и удаленно. Кроме того, отлично работаю и самостоятельно, и в составе команды (в офисе).</p>
+							
+							<h3>Проекты</h3>
+							
+							<p>Разработала ПО для следующих сфер:</p>
+							<ul>
+								<li><p>автоматизированные системы управления технологическими процессами</p></li>
+								<li><p>биллинговые системы в телекоме</p></li>
+								<li><p>медицинские информационные системы</p></li>
+								<li><p>CRM системы</p></li>
+								<li><p>ERP системы и системы бухгалтерского учета</p></li>
+								<li><p>решения в области логистики автомобильных перевозок</p></li>
+								<li><p>и другие</p></li>
+							</ul>
+							<p>В разделе <a href="#portfolio">Портфолио</a> описаны некоторые из систем.</p>
+							
+							<h3>Личные качества</h3>
+							
+							<p>Люблю программирование, потому что это творческий и созидательный процесс. Не представляю себя в другой роли. Работа программиста требует постоянно учить новые технологии, языки, вникать в новые предметные области и это импонирует.</p>
+							<p>Мне не безразлично, что будет с разрабатываемым продуктом, поэтому постоянно проявляю инициативу и вношу предложения по улучшению продукта. Решаю проблемы и удовлетворяю потребности клиента, заказчика, пользователя.</p>
+							<p>Люблю, когда программные продукты выглядят аккуратно и профессионально. Важно, чтобы программа была дружественной пользователю. Поэтому уделяю этим аспектам внимание при работе.</p>
+							<p>Люблю новые и сложные задачи, нравится всё автоматизировать.</p>
+							<p>Моя внутренняя мотивированность играет важную роль, большую чем внешние факторы, позволяя реализовывать мою ответственность.</p>
+						</div>
+					</div>
+					<!--// end row -->
+				</div>
+			</div>
+        </div>
+        <!-- End About -->
+
+		<!-- Expectation -->
+		<div id="expectation">
+			<div class="container content-lg">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Мои ожидания от работы</h2>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="margin-b-30">
+							<ul>
+								<li><p>Приму участие в полном цикле разработки продукта, преимущественно разработка новой функциональности</p></li>
+								<li><p>Считаю, что в работе очень важен грамотный менеджмент</p></li>
+								<li><p>Могу работать удаленно или частично удаленно, потому что умею работать не в офисе (имею опыт работы на себя), владею техниками тайм менеджмента и нравится работать удаленно часть времени - это позволяет лучше сфокусироваться на задачах и продуктивнее работать</p></li>
+								<li><p>Интересуюсь проектами в финансовой сфере, созданием чат-ботов и machine learning</p></li>
+								<li><p>Хочу работать там, где необходим английский язык на ежедневной основе для постоянного улучшения навыков английского</p></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 col-md-3">
+						<div class="margin-b-30">
+							<a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1gbwu5tMLvRrKlFz5BlzA71PJstM1A9TZ" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Скачать резюме (EN)</a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1FPtXeZAWhhwNoNQMSbCOiIii6dce8HUw" class="btn-theme btn-theme-md btn-default-bg text-uppercase">Скачать резюме (РУ)</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- End Expectation -->
+
 		<!-- Promo Banner -->
         <div class="promo-banner parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/01.jpg">
             <div class="container-sm content-lg">
@@ -401,7 +386,7 @@
         <div id="experience">
                 <div class="container content-lg">
 				<div class="row">
-					<div class="col-sm-12 sm-margin-b-60">
+					<div class="col-sm-12">
 						<h2>Опыт работы</h2>
 						
 						<!-- Avtologistika -->
@@ -493,7 +478,7 @@
 									<ul>
 										<li><p>Разработка фронтенд части сайта с использованием ASP.NET MVC, Javascript, jQuery, Kendo UI, Angular 2, TypeScript</p></li>
 										<li><p>Разработка модулей бекенда с ипользованием C#, LINQ, Entity Framework, ASP.NET MVC  и ASP.NET Core</p></li>
-										<li><p>Разработка веб-сервисов с использованием Web API</p></li>
+										<li><p>Разработка веб-сервисов с использованием ASP.NET Web API</p></li>
 										<li><p>Проектирование структуры БД и написание SQL-запросов с использованием СУБД MS Sql Server</p></li>
 										<li><p>Верстка страниц сайта с использованием Html, CSS, Bootstrap</p></li>
 										<li><p>Участие в планировании спринтов, в стендапах, демо и ретроспективах</p></li>
@@ -552,7 +537,7 @@
 							<div class="row slider">
 								<div class="col-sm-12">
 									<!-- Swiper Clients -->
-									<div class="swiper-slider swiper-clients">
+									<div class="swiper-slider swiper-clients-ipst">
 										<!-- Swiper Wrapper -->
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
@@ -774,6 +759,7 @@
 					<div class="row" name="amt">
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>OneMove <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/1move.png" target="_blank" title="Полный размер">
@@ -781,7 +767,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>OneMove <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<a class="link" href="http://1move.com/" target="_about">Перейти на сайт</a>
 							<p>веб-приложение доставки единичных автомобилей между авторизованными точками дилеров.</p>
 						</div>
@@ -791,6 +776,7 @@
 
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>Automotive <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/amt.png" target="_blank" title="Полный размер">
@@ -798,7 +784,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Automotive <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<a class="link" href="https://amt.estafeta.org/">Перейти на сайт</a>
 							<p>Веб-система управления потоковыми грузоперевозками.</p>
 						</div>
@@ -806,6 +791,7 @@
 						
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>Oblik SaaS <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/ioblik-big.png" target="_blank" title="Полный размер">
@@ -813,7 +799,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Oblik SaaS <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<a class="link" href="https://ioblik.com/">Перейти на сайт</a>
 							<p>Автоматизированная система управления предприятием (ERP), включающая в себя модуль бухгалтерии. Реализована в модели SaaS.</p>
 						</div>
@@ -825,6 +810,7 @@
 					<div class="row" name="amt">
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>Gruzolot <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/Gruzolot-big.png" target="_blank" title="Полный размер">
@@ -832,7 +818,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Gruzolot <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<a class="link" href="http://www.gruzolot.ru/" target="_about">Перейти на сайт</a>
 							<p>Транспортная биржа. Участвовала в разработке приложения в 2010, с тех пор дизайн и функционал сайта уже изменился.</p>
 						</div>
@@ -842,6 +827,7 @@
 
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>Система тестов <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/onlinetest-big.png" target="_blank" title="Полный размер">
@@ -849,14 +835,13 @@
 									</a>
 								</div>
 							</div>
-							<h4>Система тестов <span class="text-uppercase margin-l-20">Веб приложение</span></h4>
-							
 							<p>Веб приложения для прохождения психологического тестирования онлайн. В системе реализованы как текстовые, так и графические тесты.</p>
 						</div>
 						<!-- End Latest Products -->
 						
 						<!-- Latest Products -->
 						<div class="col-sm-4 margin-b-50">
+							<h4>Каталог недвижимости <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/catalog-big.png" target="_blank" title="Полный размер">
@@ -864,7 +849,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Каталог недвижимости <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<p>Система управления каталогом объектов недвижимости (веб сайт), реализованная как программа под Windows. Есть возможность загружать фотографии объектов недвижимости по FTP.</p>
 						</div>
 						<!-- End Latest Products -->
@@ -875,6 +859,7 @@
 					<div class="row" name="info">
 						<!-- Latest Products -->
 						<div class="col-sm-4 sm-margin-b-50">
+							<h4>Зимняя сказка <span class="text-uppercase margin-l-20">Веб сайт</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/newyear-big.jpg" target="_blank" title="Полный размер">
@@ -882,13 +867,13 @@
 									</a>
 								</div>
 							</div>
-							<h4>Зимняя сказка <span class="text-uppercase margin-l-20">Веб сайт</span></h4>
 							<p>Веб сайт для новогоднего мероприятия с самописной админкой управления сайтом.</p>
 						</div>
 						<!-- End Latest Products -->
 						
 						<!-- Latest Products -->
 						<div class="col-sm-4 sm-margin-b-50">
+							<h4>Медик <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/medic-big.png" target="_blank" title="Полный размер">
@@ -896,7 +881,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Медик <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<p>Рабочее место врача-терапевта.</p>
 						</div>
 						<!-- End Latest Products -->
@@ -905,6 +889,7 @@
 
 						<!-- Latest Products -->
 						<div class="col-sm-4 sm-margin-b-50">
+							<h4>Справочник лекарств <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<div class="margin-b-20">
 								<div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
 									<a href="img/970x647/medicine-big.png" target="_blank" title="Полный размер">
@@ -912,7 +897,6 @@
 									</a>
 								</div>
 							</div>
-							<h4>Справочник лекарств <span class="text-uppercase margin-l-20">Под Win</span></h4>
 							<p>Приложение с перечнем всех лекарственных средств в Украине с поиском и постоянными обновлениями.</p>
 						</div>
 						<!-- End Latest Products -->
@@ -923,36 +907,59 @@
 		</div>
         <!-- End Portfolio -->
 
-        
+		<!-- Education -->
+		<div id="education">
+			<div class="container content-lg">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Образование</h2>
+						<div class="row">
+							<div class="col-sm-9">
+								<h3>Специалист — Восточноукраинский Национальный Университет им. Даля</h3>
+								<p>Кафедра: Компьютерной инженерии</p>
+								<p>Специальность: Компьютерные системы и сети	</p>
+							</div>
+							
+							<div class="col-sm-3 text-right">
+								<p>1993 – 1999</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Education -->
 
 		<!-- Teaching activity -->
 		<div id="teaching">
-			<div class="container content-lg">
-				<div class="row">
-					<div class="col-sm-12 sm-margin-b-60">
-						<h2>Преподавательская деятельность</h2>
-						<div class="row">
-							<div class="col-sm-10">
-								<h3>Преподаватель Компьютерных наук</h3>
-								<p>Компьютерная академия "Шаг"</p>
+			<div class="bg-color-sky-light" data-auto-height="true">
+				<div class="container content-lg">
+					<div class="row">
+						<div class="col-sm-12 sm-margin-b-60">
+							<h2>Преподавательская деятельность</h2>
+							<div class="row">
+								<div class="col-sm-10">
+									<h3>Преподаватель Компьютерных наук</h3>
+									<p>Компьютерная академия "Шаг"</p>
+								</div>
+								
+								<div class="col-sm-2 text-right">
+									<p>2002 – 2004<br>
+									Киев</p>
+								</div>
 							</div>
 							
-							<div class="col-sm-2 text-right">
-								<p>2002 – 2004<br>
-								Киев</p>
-							</div>
-						</div>
-						
-						<hr>
-						<div class="row">
-							<div class="col-sm-10">
-								<h3>Преподаватель Компьютерных наук и инженер-программист</h3>
-								<p>Восточноукраинский Национальный Университет им. Даля</p>
-							</div>
-							
-							<div class="col-sm-2 text-right">
-								<p>2001 – 2002<br>
-								Северодонецк</p>
+							<hr>
+							<div class="row">
+								<div class="col-sm-10">
+									<h3>Преподаватель Компьютерных наук и инженер-программист</h3>
+									<p>Восточноукраинский Национальный Университет им. Даля</p>
+								</div>
+								
+								<div class="col-sm-2 text-right">
+									<p>2001 – 2002<br>
+									Северодонецк</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -963,64 +970,64 @@
 		
         <!-- Contact -->
         <div id="contact">
-            <div class="bg-color-sky-light">
-                <div class="container content-lg">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                           <h2>Свяжитесь со мной</h2>
-							<p>Мое местоположение Киев, Украина</p>
-                            <p>Не стесняйтесь связаться со мной, если у вас есть вопросы или предложения.</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-					<div class="row">
-						<div class="col-sm-4 sm-margin-b-30">
-							<div>
-								<h1 class="promo-block-title">Лилия Устимова</h1>
-								<p class="promo-block-text">Senior Software Developer<br/>C#, ASP .NET MVC, JavaScript, Angular 2</p>
-							</div>
-							
-							
-						</div>
-						
-						
-						<div class="col-sm-3 sm-margin-b-30">
-							<h4>Телефон</h4>
-							<a href="tel:+380972248889">+380972248889</a>
-						</div>
-						<div class="col-sm-3 sm-margin-b-30">
-							<h4>Email</h4>
-							<a href="mailto:ustimovalilit@gmail.com">ustimovalilit@gmail.com</a>
-						</div>
-						<div class="col-sm-2 sm-margin-b-30">
-							<h4>Skype</h4>
-							<a href="skype:lilit-programming?chat">lilit-programming</a>
-						</div>
-							
-                    </div>
-                    <!--// end row -->
-					
-					<hr>
-					<div class="row">
-						<div class="col-sm-12 md-margin-b-30">
-							<ul class="list-inline">
-								<li><a href="https://www.linkedin.com/in/ustimova-lilia/?locale=ru_RU" class="social-icons" target="blank" title="LinkedIn"><i class="icon-social-linkedin"></i></a></li>
-								<li><a href="https://github.com/LiliaUst" class="social-icons" target="blank" title="GitHub"><i class="icon-social-github"></i></a></li>
-								<li><a href="https://www.facebook.com/lilia.ustimova" class="social-icons" target="blank" title="Facebook"><i class="icon-social-facebook"></i></a></li></i></a></li>
-								<li><a href="http://programming-lilit.blogspot.com/" class="social-icons" target="blank" title="Блог"><i class="icon-globe"></i></a></li>
-							</ul>
-						</div>
+			<div class="container content-lg">
+				<div class="row margin-b-40">
+					<div class="col-sm-6">
+						<h2>Свяжитесь со мной</h2>
+						<p>Мое местоположение Киев, Украина</p>
+						<p>Не стесняйтесь связаться со мной, если у вас есть вопросы или предложения.</p>
 					</div>
-                    <!--// end row -->
-                </div>
-            </div>
+				</div>
+				<!--// end row -->
+
+				<div class="row">
+					<div class="col-sm-4 sm-margin-b-30">
+						<div>
+							<h1 class="promo-block-title">Лилия Устимова</h1>
+							<p class="promo-block-text">Senior Software Developer<br/>C#, ASP .NET MVC, JavaScript, Angular 2+</p>
+						</div>
+						
+						
+					</div>
+					
+					
+					<div class="col-sm-3 sm-margin-b-30">
+						<h4>Email</h4>
+						<h5><a href="mailto:ustimovalilit@gmail.com">ustimovalilit@gmail.com</a></h5>
+					</div>
+					<div class="col-sm-3 sm-margin-b-30">
+						<h4>Skype</h4>
+						<h5><a href="skype:lilit-programming?chat">lilit-programming</a></h5>
+					</div>
+
+					<div class="col-sm-2 sm-margin-b-30">
+						<h4>LinkedIn</h4>
+						<h5><a href="https://www.linkedin.com/in/lilia-ustimova">Личные сообщения</a></h5>
+					</div>
+						
+				</div>
+				<!--// end row -->
+				
+				<hr>
+				<div class="row">
+					<div class="col-sm-12 md-margin-b-30">
+						<ul class="list-inline">
+							<li><a href="https://www.linkedin.com/in/lilia-ustimova" class="social-icons" target="blank" title="LinkedIn"><i class="icon-social-linkedin"></i></a></li>
+							<li><a href="https://github.com/LiliaUst" class="social-icons" target="blank" title="GitHub"><i class="icon-social-github"></i></a></li>
+							<li><a href="https://www.facebook.com/lilia.ustimova" class="social-icons" target="blank" title="Facebook"><i class="icon-social-facebook"></i></a></li></i></a></li>
+							<li><a href="http://programming-lilit.blogspot.com/" class="social-icons" target="blank" title="Блог"><i class="icon-globe"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!--// end row -->
+			</div>
         </div>
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
         <!--========== FOOTER ==========-->
         <footer class="footer">
+			<div class="bg-color-sky-light" data-auto-height="true">
             <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
@@ -1031,7 +1038,8 @@
                     </div>
                 </div>
                 <!--// end row -->
-            </div>
+			</div>
+			</div>
         </footer>
         <!--========== END FOOTER ==========-->
 

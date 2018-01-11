@@ -27,6 +27,13 @@ $(window).load(function(){
             }
         }
     });
+	
+	// Swiper Clients IPST
+	var swiper2 = new Swiper('.swiper-clients-ipst', {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: false,
+    });
 
     // Swiper Clients
     var swiper = new Swiper('.swiper-testimonials', {
